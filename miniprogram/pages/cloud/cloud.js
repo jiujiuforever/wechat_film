@@ -1,4 +1,4 @@
-// pages/chooseLib/chooseLib.js
+// pages/cloud/cloud.js
 Page({
 
   /**

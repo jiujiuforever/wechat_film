@@ -1,0 +1,21 @@
+<!--pages/base/base.wxml-->
+<view>{{msg}}</view>
+<image src="{{img}}"></image>
+<view wx:for="{{arr}}" wx:key="{{index}}">
+  {{index}}
+  {{item}}
+</view>
+<view wx:for="{{list}}"  wx:key="{{index}}">
+  {{index}}
+  {{item}}
+  {{item.name}}
+  {{item.age}}
+</view>
+<view wx:if="{{lslogin}}">cwl</view>
+<view wx:else>请登录</view>
+<view wx:if="{{!lslogin}}">hidden</view>
+<view class="box" catchtap="boxClick" data-id="1234">
+  <view class="child" catchtap="childClick"></view>
+</view>
+<button size='mini' bindtap="onClick" >点我加以</button>
+<view>{{num}}</view>

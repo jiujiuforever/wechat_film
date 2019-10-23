@@ -1,11 +1,24 @@
-// pages/deployFunctions/deployFunctions.js
+// pages/base/base.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    msg:'Hello',
+    img:'/images/film.png',
+    arr:['a','b','c','d'],
+    list:[
+      {
+        name : 'jack',
+        age:20
+      },
+      {
+        name: 'luc',
+        age: 21
+    }],
+    lslogin:false,
+    num:0
   },
 
   /**
@@ -62,5 +75,30 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 用户点击
+   */
+  onClick: function () {
+    this.data.num++;
+    this.setData({
+      num: this.data.num + 1
+    })
+  },
+  boxClick: function (event) {
+    console.log('box 点击');
+    console.log(event);
+    this.data.num++;
+    this.setData({
+      num: this.data.num + 1
+    })
+  },
+  childClick: function () {
+    console.log('child 点击');
+    this.data.num++;
+    this.setData({
+      num: this.data.num + 1
+    })
   }
 })
