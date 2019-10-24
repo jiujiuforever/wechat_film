@@ -1,0 +1,9 @@
+<!--pages/upload/upload.wxml-->
+
+<view>云储存</view>
+<button type="mini" bindtap="upFile">文件上传</button>
+<button type="mini" bindtap="getFile">文件展示</button>
+<block wx:for="{{images}}">
+  <image src="{{item.url}}"></image>
+  <button data-url="{{item.url}}" type="mini" bindtap="downFile">文件下载down</button>
+</block>

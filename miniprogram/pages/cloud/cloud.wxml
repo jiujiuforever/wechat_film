@@ -1,2 +1,11 @@
 <!--pages/cloud/cloud.wxml-->
 <view>Hello World</view>
+<button bindtap="insert" style="mini">save</button>
+<button bindtap="update" style="mini">update</button>
+<button bindtap="query" style="mini">query</button>
+<button bindtap="del" style="mini">del</button>
+<view>云函数</view>
+<button bindtap="sum" style="mini">sum</button>
+<button bindtap="get" style="mini">获取当前用户ID</button>
+<button bindtap="batchdel" style="mini">批量删除</button>
+<button bindtap="queryData" style="mini">数据查询</button>
